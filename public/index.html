@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Наша история</title>
+<meta name="theme-color" content="#f6eff1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#map">Перейти к карте</a>
+<div id="map" role="application" aria-label="Карта путешествий"></div>
+
+<header class="brand">
+  <h1 id="title">Наша история</h1>
+  <p id="sub"></p>
+  <p id="stats" aria-live="polite">Загружаем карту…</p>
+</header>
+
+<div class="search">
+  <input id="q" type="search" placeholder="Страна, столица или город" autocomplete="off" aria-label="Поиск по карте"
+         role="combobox" aria-expanded="false" aria-controls="sug" aria-autocomplete="list">
+  <ul id="sug" role="listbox" hidden></ul>
+</div>
+
+<div class="legend" aria-label="Обозначения">
+  <span><i class="k pin"></i>Мы были здесь</span>
+  <span><i class="k dot"></i>Столица</span>
+  <span><i class="k ln"></i>Маршрут</span>
+</div>
+
+<div class="dock">
+  <button id="routeBtn" class="chip" aria-pressed="true">Маршрут</button>
+  <button id="ownerBtn" class="chip">Владелец</button>
+</div>
+
+<div id="banner" hidden></div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<section id="card" class="sheet" role="dialog" aria-modal="true" aria-labelledby="cardTitle" hidden></section>
+<aside id="admin" class="drawer" role="dialog" aria-label="Панель владельца" hidden></aside>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Просмотр фотографии" hidden>
+  <button class="x" id="lbClose" aria-label="Закрыть">✕</button>
+  <button class="nav prev" id="lbPrev" aria-label="Предыдущее фото">‹</button>
+  <img id="lbImg" alt="">
+  <button class="nav next" id="lbNext" aria-label="Следующее фото">›</button>
+  <p id="lbCap"></p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
