@@ -1,0 +1,13 @@
+{
+  "places": [
+    { "id": "demo-paris", "name": "Париж", "country": "Франция", "lat": 48.8566, "lng": 2.3522, "visited": true, "demo": true },
+    { "id": "demo-rome", "name": "Рим", "country": "Италия", "lat": 41.9028, "lng": 12.4964, "visited": true, "demo": true },
+    { "id": "demo-tokyo", "name": "Токио", "country": "Япония", "lat": 35.6762, "lng": 139.6503, "visited": true, "demo": true }
+  ],
+  "trips": [
+    { "id": "demo-t1", "placeId": "demo-paris", "date": null, "order": 1, "title": "Демо-поездка 1", "text": "ДЕМО-ДАННЫЕ. Это пример карточки. Войдите как владелец, удалите её и добавьте свою историю.", "media": [], "demo": true },
+    { "id": "demo-t2", "placeId": "demo-rome", "date": null, "order": 2, "title": "Демо-поездка 2", "text": "ДЕМО-ДАННЫЕ. Пока здесь нет фотографий и видео.", "media": [], "demo": true },
+    { "id": "demo-t3", "placeId": "demo-paris", "date": null, "order": 3, "title": "Демо-поездка 3 (снова Париж)", "text": "ДЕМО-ДАННЫЕ. В одном городе может быть несколько поездок — они переключаются вкладками.", "media": [], "demo": true },
+    { "id": "demo-t4", "placeId": "demo-tokyo", "date": null, "order": 4, "title": "Демо-поездка 4", "text": "ДЕМО-ДАННЫЕ. Порядок поездок задаёт линию маршрута.", "media": [], "demo": true }
+  ]
+}
